@@ -49,10 +49,10 @@ export default function App() {
   }, [])
 
   return (
-    <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-brand-500 via-brand-600 to-brand-800 overflow-hidden">
+    <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-red-500 via-red-600 to-red-800 overflow-hidden">
       {/* decorative orbs */}
-      <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-accent-400/40 blur-3xl animate-pulse pointer-events-none" />
-      <div className="absolute -bottom-32 -right-24 w-96 h-96 rounded-full bg-cloud-300/30 blur-2xl pointer-events-none" />
+      <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-red-300/40 blur-3xl animate-pulse pointer-events-none" />
+      <div className="absolute -bottom-32 -right-24 w-96 h-96 rounded-full bg-red-200/30 blur-2xl pointer-events-none" />
 
       <div className="relative z-10 w-full max-w-xl px-4">
         <div className="mx-auto bg-white/8 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-card">
@@ -73,7 +73,7 @@ export default function App() {
           <div className="flex items-center justify-center gap-4 mt-4">
             <button
               onClick={() => fetchWeather(city)}
-              className="bg-accent-500 hover:bg-accent-600 text-white px-5 py-2 rounded-lg font-semibold shadow-md transition"
+              className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-semibold shadow-md transition"
             >
               Search
             </button>
