@@ -8,7 +8,7 @@ function App() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
   const [bgClass, setBgClass] = useState(
-    "bg-gradient-to-b from-blue-400 via-purple-500 to-pink-500"
+    "bg-gradient-to-b from-brand-400 via-brand-500 to-brand-700"
   );
 
   const fetchWeather = async (cityName) => {
@@ -28,23 +28,23 @@ function App() {
   const updateBackground = (weatherMain) => {
     switch (weatherMain.toLowerCase()) {
       case "clear":
-        setBgClass("bg-gradient-to-b from-yellow-400 via-orange-400 to-red-400");
+        setBgClass("bg-gradient-to-b from-accent-200 via-accent-400 to-accent-600");
         break;
       case "clouds":
-        setBgClass("bg-gradient-to-b from-gray-400 via-gray-500 to-gray-600");
+        setBgClass("bg-gradient-to-b from-cloud-100 via-cloud-200 to-cloud-300");
         break;
       case "rain":
       case "drizzle":
-        setBgClass("bg-gradient-to-b from-blue-700 via-blue-500 to-gray-700");
+        setBgClass("bg-gradient-to-b from-brand-700 via-brand-600 to-cloud-400");
         break;
       case "thunderstorm":
-        setBgClass("bg-gradient-to-b from-gray-800 via-black to-gray-900");
+        setBgClass("bg-gradient-to-b from-brand-900 via-brand-800 to-black");
         break;
       case "snow":
-        setBgClass("bg-gradient-to-b from-blue-200 via-white to-gray-100");
+        setBgClass("bg-gradient-to-b from-cloud-200 via-cloud-100 to-white");
         break;
       default:
-        setBgClass("bg-gradient-to-b from-blue-400 via-purple-500 to-pink-500");
+        setBgClass("bg-gradient-to-b from-brand-400 via-brand-500 to-brand-700");
     }
   };
 
@@ -107,13 +107,13 @@ function App() {
 
       {/* Floating clouds */}
       <div className="absolute top-20 left-0 w-full h-64 overflow-hidden pointer-events-none">
-        <div className="bg-white/30 rounded-full w-32 h-20 absolute top-10 left-10 animate-floatSlow"></div>
-        <div className="bg-white/40 rounded-full w-48 h-28 absolute top-20 left-52 animate-floatSlow"></div>
-        <div className="bg-white/20 rounded-full w-24 h-16 absolute top-40 left-24 animate-floatSlow"></div>
+        <div className="bg-white/30 rounded-full w-32 h-20 absolute top-10 left-10 animate-float-slow"></div>
+        <div className="bg-white/40 rounded-full w-48 h-28 absolute top-20 left-52 animate-float-slow"></div>
+        <div className="bg-white/20 rounded-full w-24 h-16 absolute top-40 left-24 animate-float-slow"></div>
       </div>
-      <div className="bg-blue-400 text-white p-4">
-  Tailwind is working!
-</div>
+      <div className="bg-brand-500 text-white p-4 rounded-lg shadow-card mt-6">
+        Tailwind is working!
+      </div>
 
     </div>
   );
