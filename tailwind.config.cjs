@@ -42,6 +42,17 @@ module.exports = {
       boxShadow: {
         'card': '0 10px 30px rgba(20, 20, 40, 0.12)'
       }
+      ,
+      keyframes: {
+        'float-slow': {
+          '0%': { transform: 'translateY(0) translateX(0)' },
+          '50%': { transform: 'translateY(-10px) translateX(10px)' },
+          '100%': { transform: 'translateY(0) translateX(0)' },
+        },
+      },
+      animation: {
+        'float-slow': 'float-slow 8s ease-in-out infinite',
+      }
     },
   },
   plugins: [],

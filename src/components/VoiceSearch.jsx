@@ -22,9 +22,9 @@ const VoiceSearch = ({ onSearch }) => {
   return (
     <button
       onClick={handleVoice}
-      className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+      className="bg-accent-500 hover:bg-accent-600 text-white px-4 py-3 rounded-lg font-semibold shadow-md"
     >
-      🎤 Voice Search
+      🎤 Voice
     </button>
   );
 };
